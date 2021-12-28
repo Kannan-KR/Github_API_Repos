@@ -1,0 +1,67 @@
+/* Header */
+.navbar {
+  box-shadow: 0 0.5rem 1rem rgba(0, 9, 56, 0.521);
+  position: sticky;
+  top: 0;
+  padding: 2vh 3vw;
+  background-color: #1a1b1c;
+  z-index: 2;
+}
+
+/* Git user name */
+#user-name {
+  color: #fff;
+}
+
+/* User Avatar */
+#avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* body container - includes cards with flexbox layout */
+.repos-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+/* Body - background color */
+body {
+  background-color: #ecf2f1;
+}
+
+/* Cards - Includes details of each repository */
+.repoIndiv {
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 170, 170) 0%,
+    rgb(216, 216, 216) 50%
+  );
+}
+
+/* Hover effect on cards */
+.repoIndiv:hover {
+  transform: scale(1.1);
+}
+
+/* hover effect on anchor tag */
+a:hover {
+  color: darkblue;
+}
+
+/* Media query */
+@media only screen and (max-width: 550px) {
+  #avatar {
+    height: 50px;
+    width: 50px;
+  }
+  .repoIndiv:hover {
+    transform: scale(1.03);
+  }
+}
